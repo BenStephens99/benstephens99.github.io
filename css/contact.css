@@ -162,6 +162,10 @@ textarea {
 
 @media screen and (max-width: 90em) { 
 
+    main{
+	width:80%;
+	   
+    }
     form {
         height: auto;
     }
