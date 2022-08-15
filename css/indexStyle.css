@@ -80,6 +80,10 @@ main a {
         right: 1em;
     }
 
+    header {
+        height: 0;
+    }
+
     
     nav {
         z-index: 1;
