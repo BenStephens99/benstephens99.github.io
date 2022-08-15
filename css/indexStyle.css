@@ -14,8 +14,11 @@ main a {
 }
 
 
-#title {
+#mobileHeader {
     width: 50%;
+    display: block;
+    color: black;
+    padding: 0;
 }
 
 #skills {
@@ -24,12 +27,12 @@ main a {
     text-align: right;
 }
 
-#title h1 {
+#mobileHeader h1 {
     margin: 0;
     padding-bottom: 0;
 }
 
-#title h3 {
+#mobileHeader h3 {
     margin-top: .5em;
 }
 
@@ -61,17 +64,12 @@ main a {
     }
 
 
-    #title {
-        width: 80%;
-        margin-bottom: 2em;
+    #mobileHeader {
+        width: 100%;
     }
 
-    #title {
-        font-size: 0.8em;
-    }
-
-    #title h3 {
-        font-weight: 400;
+    header h1 {
+        margin: 0;
     }
 
     #skills {

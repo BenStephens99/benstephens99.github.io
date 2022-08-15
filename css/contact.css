@@ -123,3 +123,37 @@ textarea {
 .card a:hover {
     border: none;
 }
+
+@media screen and (max-width: 90em) { 
+
+    form {
+        height: auto;
+    }
+
+    textarea {
+        height: 8em;
+    }   
+
+    #submitButton {
+        position: relative;
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 60em) { 
+    
+    main {
+        width: 100%;
+    }
+    
+    .contactSheet {
+        width: 100%;
+        height: auto;
+    }
+
+    #smallCards {
+        width: 100%;
+    }
+}
