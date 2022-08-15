@@ -5,12 +5,8 @@
     display: none;
     color: white;
     padding: 1em;
-
 }
 
-#mobileHeader h1 {
-    margin: 0;
-}
 
 html {
     width: 100%;
@@ -77,15 +73,6 @@ footer {
     text-align: center;
 }
 
-#navMenuImage {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 2em;
-    right: 2em;
-    padding: 0;
-    margin: 0;
-}
 
 nav .right {
     float: right;
@@ -115,10 +102,6 @@ a:hover {
     display: hidden;
 }
 
-#navMenuImage {
-    display: none;
-    z-index: 1;
-}
 
 .underline {
     border-bottom: 1px solid white;
@@ -147,35 +130,53 @@ button img {
 
 @media screen and (max-width: 60em) {
     #mobileHeader {
-        display: block;
+        display: flex;
+        position: relative;
+        z-index: 2;
     }
+
+    #mobileHeader h1 {
+        margin: 0;
+        width: 90%;
+    }
+
+    #mobileHeader h3 {
+        margin: 0;
+        width: 90%;
+    }
+
 
     nav {
         display: none;
     }
+
+    #siteNav {
+        width: 100%;
+    }
+
 
     #navMenuImage {
         transition: 1s;
         display: flex;
         width: 40px;
         height: 40px;
-        position: fixed;
-        top: 0;
         right: 0;
-        padding: 20px;
+        z-index: 1;
     }
 
     nav {
         z-index: 1;
         position: fixed;
-        width: 100%;
+        top: 85px;
+        right: 0;
+        left: 0;
         height: 100%;
         background-color: rgba(255, 255, 255, 0.9);
     }
 
     #siteNav ul {
         width: 100%;
-        margin-top: 50%;
+        margin-top: 25%;
         border-bottom: none;
         text-align: center;
         font-size: 25px;
