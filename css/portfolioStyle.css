@@ -1,0 +1,320 @@
+@keyframes fadeInOpacity {
+	0% {
+        opacity: 0;
+        transform: translateX(-50px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+#title {
+    display: none;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#pageNav {
+    width: 15%;    
+    opacity: 0;
+    animation-delay: 0.8s;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#pageNav ul {
+    position: sticky;    
+    top: 1em;
+    text-align: center;
+    padding-top: 2em;
+    background-color: rgb(122,122,122, 0.9);
+    width: 90%;
+    margin: auto;
+}
+
+#pageNav li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1em;
+    list-style: none;
+}
+
+#pageNav li a {
+    color: white;
+}
+
+#pageNav h4 {
+    padding-bottom: 0;
+    margin: 0;
+    font-weight: 100;
+}
+
+#pageNav p {
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+#pageNav h4:hover {
+    font-weight: bold;
+}
+
+#pageNav img {
+    width:2em;
+}
+#pageNav a:hover {
+    border: none;
+}
+
+.bannerWork {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 1%;
+    opacity: 0;
+    animation-delay: 0s;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: white;
+}
+
+.bannerWork h2 {
+    width:100%;
+    margin: 0;
+}
+
+.bannerWork .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bannerWork article {
+    width: 50%;
+    margin: 0;
+}
+
+.bannerWork ul {
+    margin-bottom: 1em;
+}
+
+.bannerWork .imgHolder {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+}
+
+.bannerWork .imgHolder img {
+    width:100%;
+    margin: auto;
+}
+
+.bannerWork a:hover {
+    border: none;
+}
+
+.bannerWork button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2em;
+}
+
+
+#projects {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation-delay: 0.8s;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.workCard {
+    width: 50%;
+}
+
+
+.workCard .body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+
+.workCard .body img {
+    width: 100%;
+}
+
+.workCard .header {
+    width: 100%;
+}
+
+.workCard .header h3 {
+   padding: 20px;
+   padding-bottom: 0;
+   margin: 0 ;
+
+}
+
+.workCard ul {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.workCard .header img {
+    width: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+
+.workCard .body .main {
+    bottom: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.workCard .body .main img {
+    width: 3em;
+    height: auto;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+  
+}
+
+.workCard a:hover {
+    border: none;
+}
+
+.workCard .body .main .info {
+    margin: 0;
+    width: 100%;
+}
+
+.workCard .body .main .info p {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+.workCard .body .main .info a {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: 0;
+}
+
+.workCard .body .main .info a:hover {
+    cursor: pointer;
+}
+
+.workCard .body .main .info .moreInfo {
+    display: none;
+}
+
+
+@media screen and (max-width: 90em) {
+    #pageNav {
+        width: 30%;
+    }
+
+    #pageNav ul {
+        max-width: 16em;
+    }
+
+    #projects {
+        margin: auto;
+        width: 70%;
+    }
+    
+    .workCard {
+        width: 100%;
+    }
+
+    .workCard .header img {
+        width: 2em;
+        margin-top: 1.5em;
+        margin-right: 1em;
+    }
+
+    .bannerWork button {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 60em) {
+
+    #title{
+        display: block;
+    }
+
+    .bannerWork {
+        margin-top: 2em;
+        border-radius: 0.5em;
+        width: 100%;
+    }
+
+    .bannerWork .content {
+        width: 90%;
+    }
+
+    .bannerWork article {
+        width: 100%;
+    }
+
+    .bannerWork .imgHolder {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .bannerWork button {
+        position: relative;
+    }
+
+    .bannerWork .imgHolder img {
+        width: 100%;
+    }
+
+    #projects {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .workCard {
+        width: 100%;
+    }
+
+    .workCard .body {
+        width: 100%;
+    }
+}

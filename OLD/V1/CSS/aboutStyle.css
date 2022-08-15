@@ -1,0 +1,19 @@
+
+.index {
+    margin-top: 10%;
+    font-size: 1.2em;
+ }
+ 
+ .index article {
+    position: absolute;
+    width: 40%;
+ }
+ 
+ .index img{
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 10em;
+ }
+ 
