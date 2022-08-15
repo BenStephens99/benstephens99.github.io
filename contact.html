@@ -25,45 +25,42 @@
 
     <main>
 
-        <form>
-            <h1>Contact</h1>
-        </form>
+        <div class="contactSheet">
+            <form action="https://formspree.io/f/maykypyz" method="POST">
+                <fieldset>
+                    <label for="name"><strong>Name: *</strong></label>
+                    <input type="text" name="name" id="name" required />
 
-        <div id="methods">
+                    <label for="email"><strong>Email Address: *</strong></label>
+                    <input type="email" name="email" id="email" required />
 
+                    <label for="tel"><strong>Phone: </strong></label>
+                    <input type="tel" name="tel" id="email" tel />
 
-            <div id="linkedin">
-                <article>
+                    <label for="message"><strong>Message: *</strong></label>
+                    <textarea type="text" name="message" id="message" required></textarea>
 
-                </article>
-            </div>
-
-            <div id="email">
-                <article>
-                    
-                </article>
-            </div>
+                    <button id="submitButton" type="submit"> Submit </button>
+                </fieldset>
+            </form>
         </div>
 
-        <form id="form1">
-            <fieldset id="contactBox">
-                <legend><strong>Your contact details</strong></legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required/>
-                <label for="email">Email address:</label>
-                <input type="text" id="email" required/>  
-                <input id="submitButton" type="submit" value="Submit" >
-            </fieldset>
-            <fieldset id="messageBox">
-                <legend for="message"><strong>Message:</strong></legend>
-                <textarea id="message" required></textarea>
-            </fieldset>
-        </form>
 
-        <ul>
-            <li>Linkedin</li>
-            <li>Email</li>
-        </ul>
+        <div id="smallCards">
+
+            <div class="smallCard">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/ben-stephens-aaab10195/" target="_blank">
+                        <img src="images/linkedin.png">
+                    </a>
+                    <article>
+                        <p>Connect with me on LinkedIn</p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
 
     </main>
 
