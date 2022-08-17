@@ -123,7 +123,7 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(99, 99, 99, 0.5);
   }
 
   .next {
@@ -152,7 +152,7 @@
     margin-bottom: 1em;
 }
 .bannerWork .slideshow {
-    width: 50%;;
+    width: 50%;
 }
 
 .bannerWork .imgHolder {
@@ -287,8 +287,6 @@
 }
 
 
-
-
 @media screen and (max-width: 90em) {
     #pageNav {
         width: 30%;
@@ -338,7 +336,7 @@
         width: 100%;
     }
 
-    .slideshow {
+    .bannerWork .slideshow {
        width: 100%;
     }
 
