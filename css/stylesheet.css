@@ -8,9 +8,6 @@
     padding-top: 0.7em;
 }
 
-header {
-    height: 4em;
-}
 
 html {
     width: 100%;
@@ -31,6 +28,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 2em;
 }
 
 ul {
@@ -143,26 +141,24 @@ button img {
 }
 
 @media screen and (max-width: 60em) {
+    
     #mobileHeader {
         display: flex;
         position: relative;
-        z-index: 2;
+        
     }
     
-    header {
-        height: 85px;
-    }
-
     #mobileHeader h1 {
         margin: 0;
-        width: 90%;
+        width: 95%;
+        font-weight: 50;
     }
 
     #mobileHeader h3 {
+        font-weight: 75;
         margin: 0;
-        width: 90%;
+        width: 95%;
     }
-
 
     nav {
         display: none;
@@ -170,8 +166,14 @@ button img {
 
     #siteNav {
         width: 100%;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        left: 0;
+        height: 100%;
+        background-color: rgba(255, 255, 255);
+        z-index: 1;
     }
-
 
     #navMenuImage {
         transition: 1s;
@@ -182,16 +184,6 @@ button img {
         z-index: 1;
     }
 
-    nav {
-        z-index: 1;
-        position: fixed;
-        top: 85px;
-        right: 0;
-        left: 0;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-
     #siteNav {
         padding: 0;
         margin: 0;
@@ -199,7 +191,7 @@ button img {
 
     #siteNav ul {
         width: 100%;
-        margin-top: 25%;
+        margin-top: 10em;
         border-bottom: none;
         text-align: center;
         font-size: 25px;

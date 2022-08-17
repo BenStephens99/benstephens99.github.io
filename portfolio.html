@@ -23,7 +23,7 @@
         </nav>
 
         <div id="mobileHeader">
-            <h1 class="typewriter" id="title"> Portfolio </h1>
+            <h1 class="typewriter"> Portfolio </h1>
             <img id="navMenuImage" src="images/threeLinesWhite.png" onclick="openMenu()">
         </div>
 
@@ -31,7 +31,7 @@
 
     <main>
 
- 
+
 
         <div class="bannerWork" id="npcSystem">
 
@@ -39,22 +39,51 @@
 
                 <article>
                     <h2>NPC System</h2>
-                    <p>NPC spawner/controller/manager. Created to inject life into
-                        open world-games.</p>
-                    <p>Making use of performant algorithms to create non-playable characters and
-                        control their actions with dynamic real time decision making.</p>
                     <ul>
                         <li>C++</li>
                         <li>C#</li>
                         <li>Unity Engine</li>
                     </ul>
+                    <p>NPC spawner/controller/manager. Created to inject life into
+                        open world-games.</p>
+                    <p>Making use of performant algorithms to create non-playable characters and
+                        control their actions with dynamic real time decision making.</p>
+
+                    <a href=""><img src="images/youtube.png" class="icon"></a>
+                    <a class="icon" href=""><img src="images/github.png" class="icon"></a>
+
                     <p><time datetime="2022">2022</time></p>
-                    <a href="#top"><button>Take a look</button></a>
                 </article>
-                <div class="imgHolder">
-                    <img src="images/NPCSystem.png">
+
+                <div class="slideshow">
+                    <div class="imgHolder">
+
+                        <div class="slide">
+                            <img src="images/NPCSystem.png">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/NPCSystem2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/NPCSystem3.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/NPCSystem4.png">
+                        </div>
+                        <div class="slide">
+                            <img src="images/NPCSystem5.png">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
                 </div>
+                
             </div>
+
+        </div>
         </div>
 
         <nav id="pageNav">
@@ -63,19 +92,19 @@
                         <h4>NPC System</h4>
                         <p>( C#, C++)</p>
                     </a></li>
-                    <li><a href="#pongMultiplayer">
+                <li><a href="#pongMultiplayer">
                         <h4>Pong Multiplayer</h4>
                         <p>(C++, Java)</p>
                     </a></li>
-                    <li><a href="#houseEscape">
+                <li><a href="#houseEscape">
                         <h4>House Escape</h4>
                         <p>(Unreal)</p>
                     </a></li>
-                    <li><a href="#fitnessApp">
+                <li><a href="#fitnessApp">
                         <h4>Fitness App</h4>
                         <p>(Java)</p>
                     </a></li>
-                    <li><a href="#jumpGame">
+                <li><a href="#jumpGame">
                         <h4>Jump Game</h4>
                         <p>(JavaScript)</p>
                     </a></li>
@@ -86,7 +115,7 @@
                 <li><a href="#inventorySystem">
                         <h4>Inventory System</h4>
                         <p>(C++)</p>
-                    </a></li>           
+                    </a></li>
                 <li><a href="#top">
                         <img src="images/up-arrow.png">
                     </a></li>
@@ -109,18 +138,22 @@
                     <div class="main">
                         <a href="https://www.youtube.com/watch?v=PHW4R1WP5VU&ab_channel=BenStephens"
                             target="_blank"><img src="images/youtube.png"></a>
-                        <a href="https://github.com/BenStephens99/PongMultiplayer/tree/main/CI628-%20Client/src" target="_blank"><img
-                                src="images/github.png"></a>
+                        <a href="https://github.com/BenStephens99/PongMultiplayer/tree/main/CI628-%20Client/src"
+                            target="_blank"><img src="images/github.png"></a>
                         <div class="info">
                             <p><strong>Pong Multiplayer: </strong>Client-Server multiplayer game</p>
                             <a onclick="showMore('pongMultiplayer')" class="readMoreButton">Read More</a>
                             <div class="moreInfo">
-                                <p>A two player pong game using sockets with extensions to the Java FXGL engine to create and run the game 
+                                <p>A two player pong game using sockets with extensions to the Java FXGL engine to
+                                    create and run the game
                                     on the server side and a C++ client to render and control the game for the players.
                                 </p>
-                                <p>The sever provides information to the clients regarding the ball and other players positioning,
-                                    while the clients update the server with the players movement as well as rendering the game with 
-                                    high definition graphics and providing client side prediction to the player's bat for a smooth experience.
+                                <p>The sever provides information to the clients regarding the ball and other players
+                                    positioning,
+                                    while the clients update the server with the players movement as well as rendering
+                                    the game with
+                                    high definition graphics and providing client side prediction to the player's bat
+                                    for a smooth experience.
                                 </p>
                             </div>
                             <p><time datetime="2022">2022</time></p>
@@ -147,7 +180,8 @@
                             <p><strong>Agent Escape: </strong>Top down 2D Unity game.</p>
                             <a onclick="showMore('agentEscape')" class="readMoreButton">Read More</a>
                             <div class="moreInfo">
-                                <p>With enemy AI, a fun combat system, unique art style and multiple levels with increasing difficulty.</p>
+                                <p>With enemy AI, a fun combat system, unique art style and multiple levels with
+                                    increasing difficulty.</p>
                             </div>
                             <p><time datetime="2020">2020</time></p>
                         </div>
@@ -172,7 +206,8 @@
                             <p><strong>House Escape: </strong>3D Unreal Engine Game</p>
                             <a onclick="showMore('houseEscape')" class="readMoreButton">Read More</a>
                             <div class="moreInfo">
-                                <p>Escape room style game made with the Unreal Engine and blueprints visual programming.</p>
+                                <p>Escape room style game made with the Unreal Engine and blueprints visual programming.
+                                </p>
                             </div>
                             <p><time datetime="2021">2021</time></p>
                         </div>
@@ -189,16 +224,17 @@
                             <li>Android Studio</li>
                         </ul>
                     </div>
+
                     <img src="images/FitnessApp.jpg">
                     <div class="main">
-                        <a href="https://github.com/BenStephens99/FitnessApp/tree/main/app/src/main/java/com/example/fitnessapp" target="_blank"><img
-                                src="images/github.png"></a>
+                        <a href="https://github.com/BenStephens99/FitnessApp/tree/main/app/src/main/java/com/example/fitnessapp"
+                            target="_blank"><img src="images/github.png"></a>
                         <div class="info">
                             <p><strong>Fitness App: </strong>Mobile app to help follow and create custom
                                 workout routines.</p>
                             <a onclick="showMore('fitnessApp')" class="readMoreButton">Read More</a>
                             <div class="moreInfo">
-                                <p>Android application developed in Android Studio with Java to create 
+                                <p>Android application developed in Android Studio with Java to create
                                     workout routines with user chosen exercises and timings</p>
                             </div>
                             <p><time datetime="2021">2021</time></p>
@@ -218,8 +254,7 @@
                     </div>
                     <img src="images/jumpGame.png">
                     <div class="main">
-                        <a href="jumpGame/jumpGame.html" target="_blank"><img
-                                src="images/play-button.png"></a>
+                        <a href="jumpGame/jumpGame.html" target="_blank"><img src="images/play-button.png"></a>
                         <a href="https://github.com/BenStephens99/JumpGame" target="_blank"><img
                                 src="images/github.png"></a>
                         <div class="info">
@@ -236,7 +271,7 @@
                 </div>
             </div>
 
-                
+
             <div class="workCard" id="inventorySystem">
                 <div class="body">
                     <div class="header">
@@ -248,15 +283,16 @@
                     </div>
                     <img src="images/inventorySystem.jpg">
                     <div class="main">
-                        <a href="https://www.youtube.com/watch?v=SB0e54A5Z5A&ab_channel=BenStephens" target="_blank"><img
-                                src="images/youtube.png"></a>
-                        <a href="https://github.com/BenStephens99/InventorySystem/tree/main/xcube/src/demo" target="_blank"><img
-                                src="images/github.png"></a>
+                        <a href="https://www.youtube.com/watch?v=SB0e54A5Z5A&ab_channel=BenStephens"
+                            target="_blank"><img src="images/youtube.png"></a>
+                        <a href="https://github.com/BenStephens99/InventorySystem/tree/main/xcube/src/demo"
+                            target="_blank"><img src="images/github.png"></a>
                         <div class="info">
-                            <p><strong>Inventory System: </strong>Basic inventory system addition to the XCube 2D engine</p>
+                            <p><strong>Inventory System: </strong>Basic inventory system addition to the XCube 2D engine
+                            </p>
                             <a onclick="showMore('inventorySystem')" class="readMoreButton">Read More</a>
                             <div class="moreInfo">
-                                <p>Allows for the collection and dropping of in game objects depending on their weight 
+                                <p>Allows for the collection and dropping of in game objects depending on their weight
                                     and set size of the inventory.</p>
                                 <p>Keeps track of the game objects and where they're currently stored.</p>
                             </div>
@@ -270,7 +306,7 @@
 
         <a href="#top"><img src="images/up-arrow-black.png" alt="To Top" id="ToTopButton"></a>
 
-    </main> 
+    </main>
 
     <footer>
         <p>Ben Stephens 2022</p>
